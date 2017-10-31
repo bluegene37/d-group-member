@@ -1,18 +1,18 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">{{ logo }}</a>
+    <img class="navbar-brand" src="../assets/logo.png" alt="logo">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item" v-bind:class="{ active: homeActive }" @click="H()">
-            <router-link a class="nav-link" to="/" >Home</router-link>
+            <router-link class="nav-link" to="/" >Home</router-link>
           </li>
           <li class="nav-item" v-bind:class="{ active: aboutActive }" @click="A()">
-            <router-link a class="nav-link" to="/about" >About</router-link>
+            <router-link class="nav-link" to="/about" >About</router-link>
           </li>
-      </div>
+        </ul>  
     </div>
   </nav>
  </template>
