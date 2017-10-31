@@ -12,7 +12,6 @@
           <li class="nav-item" v-bind:class="{ active: aboutActive }" @click="A()">
             <router-link a class="nav-link" to="/about" >About</router-link>
           </li>
-              <!-- <router-link to="/bar">Go to Bar</router-link> -->
       </div>
     </div>
   </nav>
