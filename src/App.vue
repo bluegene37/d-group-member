@@ -1,19 +1,17 @@
 <template>
     <div id="app">
-      <NavApp></NavApp>
         <router-view></router-view>
-      <FooterApp></FooterApp>
     </div>
 </template>
 
 <script>
-    import NavApp from './components/NavApp.vue';
-    import FooterApp from './components/FooterApp.vue';
+    import Panel from './components/panel/Panel.vue'
+    import Auth from './components/auth/Auth.vue'
 
 export default {
         components: {
-            NavApp, FooterApp
-        }
+            Panel, Auth
+        },
   }
 </script>
 
